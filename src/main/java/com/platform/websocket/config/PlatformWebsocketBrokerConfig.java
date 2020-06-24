@@ -74,7 +74,7 @@ public class PlatformWebsocketBrokerConfig implements WebSocketMessageBrokerConf
                     log.info("configureClientInboundChannel -> getSessionId = {}", sessionId);
 
                     WebSocketSession webSocketSession = PlatformWebsocketManager.getWsSession(sessionId);
-                    webSocketSession.getAttributes().put(token, sessionId);     //  缓存 token 和 Websocket session-id 的关系
+                    webSocketSession.getAttributes().put("token", token);     //  缓存 token 和 Websocket session-id 的关系
 
                     PlatformWebsocketManager.addToken(token, sessionId);
                 }

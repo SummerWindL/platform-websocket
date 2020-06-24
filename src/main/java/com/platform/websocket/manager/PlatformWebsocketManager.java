@@ -1,5 +1,8 @@
 package com.platform.websocket.manager;
 
+import com.platform.websocket.service.IWebSocketService;
+import com.platform.websocket.service.WebSocketHandler;
+import com.platform.websocket.spring.WebSocketSpringContextHolder;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
@@ -20,6 +23,9 @@ public class PlatformWebsocketManager {
     public static final int WEBSOCKET_MSG_SEND_SUCCESS = 0;   //  Websocket消息发送成功
     public static final int WEBSOCKET_SESSION_OFFLINE = -1;   //  Websocket客户端离线
 
+    private static IWebSocketService zxWebSocketService = null;
+
+    private static WebSocketHandler zxWebSocketHandler = null;
     /**
      * 专用于Websocket Session管理
      * key = sessionId , value = Websocket session
@@ -104,16 +110,23 @@ public class PlatformWebsocketManager {
         }
 
         WebSocketSession webSocketSession = wsSessionManager.get(sessionId);
+        String token = (String)webSocketSession.getAttributes().get("token");
+        if(zxWebSocketHandler == null){
+            zxWebSocketHandler = WebSocketSpringContextHolder.getBean("webSocketHandler");
+        }
+        if(zxWebSocketService == null){
+            //这个地方其他模块实现
+            zxWebSocketService =  WebSocketSpringContextHolder.getBean("webSocketMonitorServiceImpl");
+        }
+        zxWebSocketHandler.handler(zxWebSocketService,token);
+
+        if (null != token) {
+            wsSessionTokenManager.remove(token);
+        }
         //  TODO 这里需要判断 webSocketSession 是否状态正常
         if (webSocketSession.isOpen())
         {
             try {
-                String token = (String)webSocketSession.getAttributes().get("token");
-
-                if (null != token) {
-                    wsSessionTokenManager.remove(token);
-                }
-
                 webSocketSession.close();
             } catch (IOException e) {
                 e.printStackTrace();
