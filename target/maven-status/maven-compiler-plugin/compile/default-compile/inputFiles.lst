@@ -1,0 +1,13 @@
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\config\PlatformWebsocketBrokerConfig.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\config\PlatformWebsocketDecoratorFactory.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\spring\WebSocketSpringContextHolder.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\service\WebSocketHandler.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\demo\DemoSendToUserControllerTest.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\config\PlatformPrincipalHandshakeHandler.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\config\PlatformStompConnectEventListener.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\config\PlatformWsConfig.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\manager\PlatformWebsocketManager.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\demo\DemoSocketSessionRegistry.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\PlatformWebsocketApplication.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\service\IWebSocketService.java
+C:\D\git\Java_Tool_Maven\websocket\platform-websocket\src\main\java\com\platform\websocket\config\PlatformChannelInterceptor.java

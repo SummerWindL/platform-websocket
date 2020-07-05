@@ -1,0 +1,1 @@
+keytool -genkeypair -alias tomcat -keyalg RSA -keystore F:\keystore.jks

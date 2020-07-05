@@ -44,10 +44,6 @@
             <scope>true</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-log4j2</artifactId>
-        </dependency>
 
         <!-- 整合模板引擎 -->
         <dependency>
@@ -70,12 +66,6 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
-        </dependency>
-        <!-- Java工具类-->
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>5.3.7</version>
         </dependency>
         <!-- 整合websocket -->
         <dependency>

@@ -1,0 +1,17 @@
+com\platform\websocket\config\PlatformWsConfig.class
+com\platform\websocket\config\PlatformWebsocketDecoratorFactory$1.class
+com\platform\websocket\config\PlatformWebsocketBrokerConfig.class
+com\platform\websocket\config\PlatformWebsocketBrokerConfig$1.class
+com\platform\websocket\config\PlatformStompConnectEventListener.class
+com\platform\websocket\config\PlatformWebsocketDecoratorFactory.class
+com\platform\websocket\manager\PlatformWebsocketManager.class
+com\platform\websocket\config\PlatformPrincipalHandshakeHandler.class
+com\platform\websocket\spring\WebSocketSpringContextHolder.class
+com\platform\websocket\service\WebSocketHandler.class
+com\platform\websocket\demo\DemoSocketSessionRegistry.class
+com\platform\websocket\service\IWebSocketService.class
+com\platform\websocket\PlatformWebsocketApplication.class
+com\platform\websocket\config\PlatformWebsocketBrokerConfig$2.class
+com\platform\websocket\demo\DemoSendToUserControllerTest.class
+com\platform\websocket\config\PlatformPrincipalHandshakeHandler$1.class
+com\platform\websocket\config\PlatformChannelInterceptor.class

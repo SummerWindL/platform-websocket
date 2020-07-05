@@ -1,0 +1,10 @@
+middle:   # middle server 专项配置参数
+  server:
+    websocket:
+      endpoint: /demo-zx-websocket-midserver  # Websocket通道地址
+      test-topic-scheduled-fixed-delay: 1000  # 测试专用，定时广播topic的时间间隔，单位：毫秒
+      websocket-message-broker-stats-period: 1  # 定时打印SpringBoot Websocket Session统计数值，时间间隔，单位：秒
+
+server:   # springboot 内置容器，jetty，专项配置参数
+  port: 8082
+

@@ -1,0 +1,19 @@
+
+logging:
+  file: logs/middle-websocket-server.log
+  level:
+    root: INFO
+    com:
+      ikinloop: DEBUG
+    org:
+      springframework:
+        data:
+          mongodb:
+            core: WARN
+        messaging: DEBUG
+
+spring:
+  profiles:
+    active:
+    - dev
+
