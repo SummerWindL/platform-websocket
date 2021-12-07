@@ -18,8 +18,13 @@ public class DemoSendToUserControllerTest {
 	@Autowired
 	PlatformWebsocketManager platformWebsocketManager;
 
+	/**
+	 * 此处仅用于测试，上正式环境需要注释
+	 * @author Advance
+	 * @date 2021/12/6 16:38
+	 */
 //    @Scheduled(fixedDelay=5000)
-	@Scheduled(fixedDelayString ="${middle.server.websocket.test-topic-scheduled-fixed-delay}")
+//	@Scheduled(fixedDelayString ="${middle.server.websocket.test-topic-scheduled-fixed-delay}")
     public void priceAutoConvert() throws Exception {
 
 		this.sendCount++;
